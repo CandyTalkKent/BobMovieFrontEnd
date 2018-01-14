@@ -1,1 +1,13 @@
-<h1>This comming soon!!!!</h1>
+<div class="list-group">
+	<a ng-repeat="item in subjects" href="#/detail/{{item.id}}" class="list-group-item">
+		<span class="badge">{{item.rating.average}}</span>
+		<div class="media">
+			<div class="media-left">
+				<img class="media-object" ng-src="{{item.images.small}}" alt="item.title" height="128">
+			</div>
+			<div class="media-body">
+
+			</div>
+		</div>
+	</a>
+</div>
